@@ -1,7 +1,7 @@
 export const validateZip = (zip: string): boolean => {
-  if((zip.length > 4 && zip.length < 6)&&(!isNaN(parseInt(zip)))){
+  let notNumber: boolean = isNaN(parseInt(zip));
+  if((zip.length > 4 && zip.length < 6)&&(!notNumber))
     return true;
-  }
   else
     return false;
 }

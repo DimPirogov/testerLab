@@ -1,5 +1,6 @@
 export const getGenitive = (name: string): string => {
-  if(name.slice(-1) !== "s"){
+  let lastChar = name.slice(-1);
+  if(lastChar !== "s"){
     return `${name}s`;
   }
   else
